@@ -3,4 +3,4 @@ WORKDIR "/home/app/"
 COPY . "/home/app/"
 RUN pip install --no-cache-dir flask
 EXPOSE 5000
-CMD ["python", "flaskapp.py"]
+ENTRYPOINT ["python", "flaskapp.py"]
